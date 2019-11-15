@@ -1,0 +1,15 @@
+{
+  "name": "tutorserver",
+  "version": "1.0.0",
+  "description": "A websocket server for laravel application to ignote chat/voice/video calls realtime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Saham Nadeem",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
