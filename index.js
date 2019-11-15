@@ -1,9 +1,13 @@
-var app = require('http').createServer()
+var app = require('http').createServer(handler)
 var io = require('socket.io')(app);
 var fs = require('fs');
 
 app.listen(8080);
 var users = [];
+
+function handler (req, res) {
+  res.send({messaga:"welcome"});
+}
 
 io.on('connection', function (socket) {
   socket.on('user_id',(data)=>{
